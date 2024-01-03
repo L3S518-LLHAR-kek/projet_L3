@@ -224,36 +224,7 @@
                     <p class=p50>Actuellement le [pays 1] est au dessus du [pays 2], montrant que [pays 1] pollue plus que [pays 2]. Au cours du temps on peut voir que le tourisme ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a metus pellentesque massa lacinia scelerisque et nec purus. Proin mattis elementum euismod. Curabitur et felis felis. Donec vel nulla malesuada, tempor nisi in, faucibus nulla. Cras at ipsum tempor, rutrum sapien ut, auctor sapien.
                     Curabitur a metus pellentesque massa lacinia scelerisque et nec purus. Proin mattis elementum euismod. </p>
                     
-                    <script>
-                        data = [
-                            {
-                                "categ":"CPI",
-                                "Canada":2,
-                                "USA":2.23,
-                            },
-                            {
-                                "categ":"Arrivées",
-                                "Canada":-1,
-                                "USA":4,
-                            },
-                            {
-                                "categ":"PIB/Hab",
-                                "Canada":0.2,
-                                "USA":0.3,
-                            },
-                            {
-                                "categ":"CO2",
-                                "Canada":-0.5,
-                                "USA":-3,
-                            },
-                            {
-                                "categ":"GPI",
-                                "Canada":3.33,
-                                "USA":3.33,
-                            }
-                        ]
-                        
-                    </script>
+                    
                 </div>
             
 
@@ -295,7 +266,7 @@
         
         spider()
         createGraph()
-        graphBar(data,"<?=$noms[0]?>","<?=$noms[1]?>")
+        graphBar()
         createMapCompare(['<?=$pays1?>','<?=$pays2?>'])
 
     </script>

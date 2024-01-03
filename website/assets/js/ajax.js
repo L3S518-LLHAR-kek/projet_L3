@@ -33,6 +33,17 @@ function compareAjax(incr, id_pays) {
                 }
             }
             lineAjax(incr, result["line"], result["nom"])
+
+            result["bar"] = JSON.parse(result["bar"])
+            console.log(result["bar"])
+            for (var i=2008;i<2021;i++) {
+                console.log(i)
+                for (var j=0;j<result["bar"][i].length;j++) {
+                    result["bar"][i][j]["value"] = parseFloat(result["bar"][i][j]["value"])
+                }      
+            }
+            
+            BarAjax(incr, result["bar"], result["nom"])
         },
         error:function(mess){
             console.log(mess)
